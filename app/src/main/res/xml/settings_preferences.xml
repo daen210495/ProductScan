@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="action_auto_search"
+        android:title="Internet search"
+        android:summary="When applicable, automatically perform a web search."
+        android:defaultValue="false"/>
+
+    <CheckBoxPreference
+        android:key="action_scan_bulk"
+        android:title="Bulk scan mode"
+        android:summary="Scan and save codes without preview."
+        android:defaultValue="false"/>
+
+    <CheckBoxPreference
+        android:key="action_scan_vibrate"
+        android:title="vibrate"
+        android:summary="Vibrate if scan is successful."
+        android:defaultValue="false"/>
+
+    <CheckBoxPreference
+        android:key="action_scan_beep"
+        android:title="Beep"
+        android:summary="Beep if scan is successful."
+        android:defaultValue="true"/>
+
+    <CheckBoxPreference
+        android:key="action_scan_history"
+        android:title="History"
+        android:summary="Save history of your scan."
+        android:defaultValue="true"/>
+
+    <CheckBoxPreference
+        android:key="action_scan_repeated"
+        android:title="Repeated Scan"
+        android:summary="Save duplicate scan results in history."
+        android:defaultValue="false"/>
+
+</PreferenceScreen>

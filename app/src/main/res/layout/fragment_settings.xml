@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.reader.qr.productscan.Settings"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/settings_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@color/colorPrimary"
+        android:minHeight="?attr/actionBarSize">
+
+        <ImageButton
+            android:id="@+id/ib_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="start"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/ic_action_back"
+            android:contentDescription="@string/back" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/action_settings"
+            android:textSize="25sp"
+            android:textColor="@color/initText"
+            android:layout_marginBottom="4dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="4dp"/>
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

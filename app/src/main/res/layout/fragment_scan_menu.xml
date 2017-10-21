@@ -1,0 +1,86 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.reader.qr.productscan.ScanMenu">
+  <!--  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+    <LinearLayout
+        android:id="@+id/ll_btn_sp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical|center_horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_sp"
+                android:layout_height="300dp"
+                android:layout_width="300dp"
+                android:background="@drawable/scanpro_i"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_btn_sv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical|center_horizontal">
+        <ImageButton
+            android:id="@+id/btn_sv"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:background="@drawable/scanven_c" />
+    </LinearLayout>
+</LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical">
+
+        <model.SquareButton
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btn_sp"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/scanpro_i"
+                android:scaleType="centerInside" />
+
+        </model.SquareButton>
+
+        <model.SquareButton
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/btn_sv"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/scanven_i"
+                android:scaleType="centerInside" />
+
+        </model.SquareButton>
+    </LinearLayout>
+</FrameLayout>
